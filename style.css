@@ -1,0 +1,56 @@
+body,html{
+    margin : 0;
+    overflow-x: hidden;
+
+}
+.fond{
+    background-image: url("fond.png");
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.clavier{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+.carre{
+    display: flex;
+    margin: 15px ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black 4px solid;
+    border-radius: 8%;
+    height: 12vh;
+    width: 5vw;
+
+}
+
+.lettre{
+    font-size: 2em;
+    font-weight: bolder;
+    color: white;
+
+}
+
+
+
+.bruit{
+    color: yellow;
+    font-size: 1.2em;
+}
+.playing{
+
+    transform: scale(110%);
+    border: yellow 4px solid ;
+    background-color: rgba(0, 0, 0, 0.59);
+}
