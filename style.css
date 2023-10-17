@@ -7,6 +7,9 @@ body,html{
     background-image: url("fond.png");
     width: 100vw;
     height: 100vh;
+    background-size: cover;
+    position: fixed;
+    background-repeat: no-repeat;
 
 }
 
@@ -16,6 +19,7 @@ body,html{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
 
 }
@@ -45,12 +49,42 @@ body,html{
 
 
 .bruit{
-    color: yellow;
+    color: #f391ed;
     font-size: 1.2em;
 }
+
+    .carre:hover{
+        transform: scale(110%);
+        border: #f391ed 4px solid ;
+        background-color: rgba(0, 0, 0, 0.59);
+    }
+
 .playing{
 
     transform: scale(110%);
-    border: yellow 4px solid ;
+    border: #f391ed 4px solid ;
     background-color: rgba(0, 0, 0, 0.59);
+}
+@media only screen and (max-width: 1200px){
+    .carre{
+
+        height: 17vh;
+        width: 17vw;
+
+    }
+    .fond{
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 786px){
+    .carre{
+
+        height: 24vh;
+        width: 22vw;
+
+    }
+    .fond{
+        background-size: cover;
+    }
 }
